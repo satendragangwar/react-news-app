@@ -46,6 +46,8 @@
   },
  
   "author": "satendra",
-  "license": "ISC"
- 
+  "license": "ISC",
+  "engines": {
+    "node" : "16.x"
+  }
 }
