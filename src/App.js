@@ -1,6 +1,6 @@
 
 import './App.css';
-import LoadingBar from 'react-top-loading-bar'
+
 
 
 import React,{useState} from 'react'
@@ -14,8 +14,8 @@ import {
 } from "react-router-dom";
 
 const App = ()=> {
-  const apiKey = process.env.REACT_APP_NEWS_API
-  
+  const apiKey = '81088c91ea8e483a85d05a5f89a3ec5c'
+
   const [progress , setProgress] = useState(0)
   
 
@@ -24,12 +24,7 @@ const App = ()=> {
       <div>
         <Router >
         <Navbar/>
-        <LoadingBar
-        height={3}
-        color='#f11946'
-        progress={progress}
-   
-      />
+       
         
         <Switch>
           <Route exact path="/"><News setProgress={setProgress} apiKey={apiKey} key="general" pageSize = {6}  category = "general" /></Route>
