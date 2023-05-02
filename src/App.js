@@ -16,7 +16,7 @@ import {
 const App = ()=> {
   const apiKey = '81088c91ea8e483a85d05a5f89a3ec5c'
 
-  const [progress , setProgress] = useState(0)
+  const [ setProgress] = useState(0)
   
 
   
